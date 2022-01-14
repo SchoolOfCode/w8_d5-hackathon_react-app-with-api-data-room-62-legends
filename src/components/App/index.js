@@ -12,6 +12,18 @@ function App() {
   const [next, setNext] = useState();
   const [previous, setPrevious] = useState();
 
+  useEffect(() => {
+    axios.get(current).then(
+      (res) => {
+        setNext(res.data.next);
+        setPrevious(res.data.previous);
+        setPokemon(res.data.results.map((p) => p.name));
+      },
+      [current]
+    );
+  });
+
+  //Created the functions to be handed to the component (Pages...) to be used as its props
   function clickPreviousPage() {
     setPrevious(previous);
   }

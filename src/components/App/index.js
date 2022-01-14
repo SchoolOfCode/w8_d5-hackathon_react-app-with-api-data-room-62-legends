@@ -12,7 +12,25 @@ function App() {
   const [next, setNext] = useState();
   const [previous, setPrevious] = useState();
 
-  return <div className="App">null</div>;
+  function clickPreviousPage() {
+    setPrevious(previous);
+  }
+
+  function clickNextPage() {
+    setNext(next);
+  }
+
+  return (
+    <div className="App">
+      <ListOfPokemon pokemon={pokemon} />
+      <PagesNextAndPrevious
+        clickNextPage={clickNextPage}
+        clickPreviousPage={clickPreviousPage}
+      />
+    </div>
+  );
 }
 
 export default App;
+
+// PagesNextAndPrevious({ clickNextPage, clickPreviousPage

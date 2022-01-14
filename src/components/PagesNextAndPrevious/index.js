@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 //creating previous and next buttons. Handing clickNextPage and clickPreviousPage as props to the App (where will write the functions)
 function PagesNextAndPrevious({ clickNextPage, clickPreviousPage }) {
   return (

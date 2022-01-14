@@ -40,7 +40,7 @@ function App() {
   //Here is (inside the return )what gets rendered on the browser
   return (
     <div>
-      <Heading text={Heading} />
+      <Heading title="Pokemon for every mood!! ^-^" />
       <ListOfPokemon pokemon={pokemon} />
       <PagesNextAndPrevious
         clickNextPage={clickNextPage}

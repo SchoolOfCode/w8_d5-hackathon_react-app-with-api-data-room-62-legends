@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ListOfPokemon from "../ListOfPokemon";
 import PagesNextAndPrevious from "../PagesNextAndPrevious";
+import Heading from "../Heading";
 // import "./App.css";
 import axios from "axios";
 
@@ -39,6 +40,7 @@ function App() {
   //Here is (inside the return )what gets rendered on the browser
   return (
     <div>
+      <Heading text={Heading} />
       <ListOfPokemon pokemon={pokemon} />
       <PagesNextAndPrevious
         clickNextPage={clickNextPage}

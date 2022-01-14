@@ -20,6 +20,7 @@ Allows user to use pagination (next & previous button) (component)
 
 Recap how to use Netlify
 Deploy
+https://gracious-perlman-3908a7.netlify.app
 
 ### Stretch goals
 
